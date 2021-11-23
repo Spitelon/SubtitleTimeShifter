@@ -142,6 +142,7 @@
     <None Include="..\..\..\Desktop\primer.srt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="List.h" />
     <ClInclude Include="SRT.h" />
     <ClInclude Include="SRTComponent.h" />
     <ClInclude Include="Time.h" />
