@@ -57,10 +57,30 @@ public:
 		return datapop;
 
 	}
+
+	T popFront() {
+		T datapop;
+		if (count != 0) {
+			datapop = first->data;
+			element* tmp = first;
+			first = first->next;
+			if (first != nullptr) {
+				first->prev = nullptr;
+			}
+			delete tmp;
+			count--;
+		}
+		else datapop = -1;
+		return datapop;
+	}
+
+
    
 	int getCount() {
 		return this->count;
 	}
+
+
 
 
 };
